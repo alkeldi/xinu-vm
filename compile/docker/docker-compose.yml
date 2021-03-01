@@ -1,0 +1,12 @@
+version:  "3"
+services:
+  xinu_compiler:
+    container_name: xinu_compiler
+    hostname: xinu_compiler
+    working_dir: /xinu_compiler/compile
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    image: xinu_compiler
+    volumes: 
+      - ../../:/xinu_compiler

@@ -1,0 +1,7 @@
+This directory contains files needed for compiling with docker.
+ 
+To startup the container in background:
+    $ docker-compose up -d
+
+To run make:
+    $ docker exec xinu_compiler make
